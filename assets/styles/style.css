@@ -7,6 +7,18 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+.container {
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.fluid-container {
+    max-width: 100%;
+    margin:0 auto;
+}
+
+
+
 .logo {
     color:#FF0000;
      font-family: "Inter", sans-serif;
@@ -21,13 +33,14 @@ header .header-content {
     align-items: center;
 }
 
-header nav ul {
+header nav ul, footer nav ul {
     list-style:none;
     display:flex;
     gap:16px;
+    padding:0px;
 }
 
-header nav ul li a {
+header nav ul li a, footer nav ul li a {
     text-decoration: none;
     color:black;
 }
@@ -59,4 +72,133 @@ header nav ul li a:hover {
 
 .header-right-icons {
     font-size:24px;
+}
+
+.movie-top-info {
+    display: flex;
+    gap: 32px;
+}
+
+.movie-top-info .left {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.gray-text {
+    color:gray;
+}
+
+.black-text {
+    color:black;
+}
+
+.stars i.full {
+    color:#FF0000;
+}
+
+.age {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.time-info {
+    align-self:center;
+}
+
+.movie-description {
+    max-width:50%;
+}
+
+.movie-bottom-info > div {
+    margin-bottom:8px;
+    color:#FF0000;
+    font-weight: 600;
+}
+
+button {
+    background-color: #FF0000;
+    color:white;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width:100px;
+    text-align:left;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid #FF0000;
+    color:#FF0000;
+}
+
+.single-movie h2 {
+    font-size:32px;
+}
+
+.movies-list .top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.movies-list .top a {
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+.movies-list .item-info {
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.movies-list-content {
+    display:flex;
+    gap:16px;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.movies-list .item {
+    padding:32px 16px;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    border:1px solid black;
+}
+
+/** Footer Styles **/
+.footer.fluid-container {
+    margin-top:32px;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+footer .left {
+    flex:2;
+}
+
+footer .socials, footer .app-links {
+    flex:1;
+}
+
+footer .socials img {
+    width:48px;
+}
+
+footer .app-links img {
+    width:150px;
+}
+
+footer .app-link-content {
+    display:flex;
+    gap:16px;
 }

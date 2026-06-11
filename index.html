@@ -1,45 +1,174 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <title>WitFlix</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <div class="header-content">
-        <h1 class="logo">WitFlix</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">TV Shows</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="search-wrapper">
-                <input type="text" placeholder="Search" />
+    <header class="fluid-container">
+        <div class="header-content">
+            <h1 class="logo">WitFlix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" />
+                </div>
+                <i class="fa-solid fa-bell header-right-icons"></i>
+                <i class="fa-regular fa-circle-user header-right-icons"></i>
             </div>
-            <i class="fa-solid fa-bell header-right-icons"></i>
-            <i class="fa-regular fa-circle-user header-right-icons"></i>
+        </div>
+    </header>
+
+    <div class="single-movie container">
+        <h2>Movie Name</h2>
+        <div class="movie-top-info">
+            <div class="left">
+                <div class="stars">
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
+                </div>
+                <span>7.3 <span class="gray-text">IMDB</span></span>
+            </div>
+            <div class="age">16+</div>
+            <div class="time-info">2h 21 min</div>
+        </div>
+        <div class="movie-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the
+                librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy
+                text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and
+                more recently with desktop publishing software including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="movie-bottom-info">
+            <div>Starring: <span class="black-text">John Doe</span></div>
+            <div>Genre: <span class="black-text">John Doe</span></div>
+            <div>Tags: <span class="black-text">John Doe</span></div>
+        </div>
+        <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+    </div>
+    <!--Popular Movies-->
+    <div class="movies-list container">
+        <div class="top">
+            <h2>Popular Movies</h2>
+            <a href="#">View All</a>
+        </div>
+        <div class="movies-list-content">
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
         </div>
     </div>
-</header>
+    <!--Recommended Movies-->
+    <div class="movies-list container">
+        <div class="top">
+            <h2>Recommended For You</h2>
+            <a href="#">View All</a>
+        </div>
+        <div class="movies-list-content">
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+        </div>
+    </div>
 
-<div class="single-movie"></div>
-<!--Popular Movies-->
-<div class="movies-list"></div>
-<!--Recommended Movies-->
-<div class="movies-list"></div>
+    <footer class="fluid-container footer">
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                </ul>
+            </nav>
+            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry,
+            is simply dummy text of the printing and typesetting industry
+        is simply dummy text of the printing and typesetting industry
+    is simply dummy text of the printing and typesetting industry
+is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="socials">
+            <span>Follow Us</span>
+            <div class="social-icons">
+                <a href="#"><img src="./assets/images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="./assets/images/youtube-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="app-links">
+            <div>Apps</div>
+            <div class="app-link-content">
+                <a href="#"><img src="./assets/images/googleplay.png" alt="Google Play"></a>
+                <a href="#"><img src="./assets/images/applestore.png" alt="App Store"></a>
+            </div>
+        </div>
+    </footer>
 
-<footer></footer>
 </body>
+
 </html>
